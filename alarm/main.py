@@ -120,7 +120,7 @@ if __name__ == '__main__':
                 cv2.putText(frame_img, warning, (10, 100),
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
             if countdown<add_time(time1):
-                print("fuck you")
+                print("warning")
 
 
 

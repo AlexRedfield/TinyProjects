@@ -16,7 +16,9 @@ while True:
         print(data)
         if not data:
             break
-        client.sendall(('[%s] %s' % (time.ctime(), data)).encode())  # 发送数据到客户端
+
+        client.sendall((f'[{time.ctime()}] {data}').encode())  # 发送数据到客户端
+
     client.close()
     break
 server.close()
